@@ -1,0 +1,81 @@
+<!--Shyon Seyed-Emami, CSC102 Assignment 3.1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>>, initial-scale=1.0">
+    <!--Title name "Strings"-->
+    <title>Strings</title>
+    <!--internal CSS stylesheet-->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+    
+      #memeImage {
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        width: 500px;
+        height: auto;
+        border-radius: 4px;
+      }
+      
+      #updatedString {     
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      form {
+        text-align: center;
+      }
+      
+      input[type="text"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        margin: 10pt 0;
+      }
+      
+      input[type="submit"] {
+        padding: 8px 15px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      </style>
+    <!--JavaScript file link-->
+    <script src = "palindrome.js"></script> 
+</head>
+<body>
+    <!--h1 header name "Palindrome Checker"-->
+    <h1>Palindrome Checker</h1>
+    <p>
+    <!--Image link-->
+    <img id="memeImage" src="that-would-be-great-coding-meme.jpg"> 
+    </p>
+    <!--div element id for "updatedString"-->
+    <div id = "updatedString"> String update: </div>
+    <!--form element id for "sringSubmit"-->
+    <form id = "stringSubmit" onsubmit = "return false"> 
+    <br>
+    <!--input element id for "sring1"-->
+    Type a word: <input type="text" id = "string1"/> 
+    <br> 
+    <!--When submit button is clicked "palindromeChecker()" function will run-->
+    <input type = "submit" onclick = "palindromeChecker();" /> 
+    </form> 
+</body>
+</html>
